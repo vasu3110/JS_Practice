@@ -43,3 +43,32 @@ Boolean=>boolean
 Number=>number
 String=>string
 */
+
+//Stack(Primitive), Heap(Non-Primitive)
+
+// let a="Hello";
+// let b=a;
+// console.log(b);
+// console.log(a);
+// b="Bye";
+// console.log(b);
+// console.log(a);
+
+let obj1={
+    name:"Vasu",
+    roll_no:105,
+    subject:"AI",
+}
+
+let obj2=obj1;
+console.log(obj1.name);
+console.log(obj2.name);
+
+obj2.name="Vivek";
+
+console.log(obj1.name);
+console.log(obj2.name);
+
+
+
+
