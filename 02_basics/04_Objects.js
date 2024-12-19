@@ -59,3 +59,16 @@ console.log(Object.values(chromeUser));
 console.log(Object.entries(chromeUser));
 
 console.log(chromeUser.hasOwnProperty('hello'));
+
+const course={
+    coursename:"js in hindi",
+    price:"1000",
+    courseinstructor:"Hitesh"
+}
+
+const {courseinstructor:instructor}=course;
+ 
+console.log(instructor);
+
+
+
