@@ -49,3 +49,8 @@ books=[
 
 const userBooks=books.filter((bk)=>bk.genre==='History')
 console.log(userBooks);
+
+const query1=books.filter((bk)=>bk.publish>1985 && bk.genre==='History');
+console.log(query1);
+
+
