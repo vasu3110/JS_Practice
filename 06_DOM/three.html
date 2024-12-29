@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    
+</body>
+<script>
+    const div=document.createElement('div');
+    console.log(div);
+
+    div.className="main";
+    div.id=Math.round(Math.random()*10+1);
+    div.setAttribute("title","generated title");
+    div.style.backgroundColor='green';
+    div.style.padding="12px";
+
+    // div.innerText="Hello This is a new element ";
+    //div.className and div.innerText overwrites values by first fetching that value from the DOM tree and then updates it
+    //But div.setAttribute updates the values directly in the tree thus saving a round trip
+    //By Now the node is created in the memory but is not attached on the webpage.
+    //Below is an alternate to the above innerText approach to add a text inside the div created
+    const addText=document.createTextNode("Chai Aur Code");
+    div.appendChild(addText);
+    document.body.appendChild(div);
+
+    // const h1=document.createElement('h1');
+    // console.log(h1);
+
+</script>
+</html>
