@@ -32,7 +32,7 @@ buttons.forEach(function(button){
 }); 
 ```
 
-##Project2
+## Project2
 ```Javascript
 const form=document.querySelector('form');
 //this use case will give you empty
@@ -65,5 +65,15 @@ form.addEventListener('submit',function(e){
     }
   }
 });
+```
 
+## Project-3
+```Javascript Code
+const clock=document.getElementById('clock');
+
+setInterval(function(){
+  let date=new Date();
+  // console.log(date.toLocaleTimeString());
+  clock.innerHTML=date.toLocaleTimeString();
+},1000);
 ```
